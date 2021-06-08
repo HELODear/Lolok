@@ -13,8 +13,6 @@ async def start_(client: Client, message: Message):
     await message.reply_text(
         f"""<b>Hi {message.from_user.first_name}!
 \nI am 𝐌𝟒𝐔 bot • @xxvasu ❤
-\nContact us at @Yuki_Support
-\n/help list of available commands.
  </b>""",
       
        
