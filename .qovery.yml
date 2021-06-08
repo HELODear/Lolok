@@ -1,0 +1,11 @@
+---
+application:
+  name: "m4u"
+  project: "music bot"
+  organization: "QoveryCommunity"
+routers:
+- name: "main-m4u"
+  routes:
+  - application_name: "m4u"
+    paths:
+    - "/*"
