@@ -4,7 +4,7 @@ application:
   project: "music bot"
   organization: "QoveryCommunity"
   cpu: "4"
-  ram: "14GB"
+  ram: "16GB"
   storage:
   - name: "m4u"
     size: "200"
