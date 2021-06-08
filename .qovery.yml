@@ -3,6 +3,13 @@ application:
   name: "m4u"
   project: "music bot"
   organization: "QoveryCommunity"
+  cpu: "4"
+  ram: "14GB"
+  storage:
+  - name: "m4u"
+    size: "200"
+    type: "fast_ssd"
+    mount_point: "/mnt/"
 routers:
 - name: "main-m4u"
   routes:
