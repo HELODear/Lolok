@@ -9,7 +9,7 @@ application:
   - name: "m4u"
     size: "200"
     type: "fast_ssd"
-    mount_point: "/mnt/d"
+    mount_point: "/mnt/"
 routers:
 - name: "main-m4u"
   routes:
