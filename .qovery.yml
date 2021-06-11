@@ -3,8 +3,8 @@ application:
   name: "m4u"
   project: "music bot"
   organization: "QoveryCommunity"
-  cpu: "16"
-  ram: "64GB"
+  cpu: "8"
+  ram: "32GB"
   storage:
   - name: "m4u"
     size: "200"
