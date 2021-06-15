@@ -90,7 +90,7 @@ async def help(client: Client, message: Message):
 /saavn <song name> - download songs you want quickly via saavn
 /video <song name> - download videos you want quickly
 \n𝐀𝐃𝐌𝐈𝐍𝐒 𝐎𝐍𝐋𝐘
-/player - open music player settings panel
+\n/player - open music player settings panel
 /pause - pause song play
 /resume - resume song play
 /skip - play next song
@@ -103,7 +103,7 @@ async def help(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "𝐇𝐄𝐋𝐏 𝐂𝐎𝐍𝐓𝐀𝐂𝐓", url="https://t.me/Yuki_Support"
+                        "ᴄᴏɴᴛᴀᴄᴛ ᴠᴀꜱᴜ", url="https://t.me/xxvasu"
                     )
                 ]
             ]
