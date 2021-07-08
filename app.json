@@ -1,9 +1,9 @@
 {
-    "name": "✯ΛLEXA ᴍᴜꜱɪᴄ✯",
+    "name": "✯M4U✯",
     "logo": "https://telegra.ph/file/e2ccde37bf106145ae6f4.jpg",
     "description": "Open-Source bot to play songs in your Telegram's Group Voice Chat. Powered by PyTgCalls.",
     "keywords": ["music", "voicechat", "telegram"],
-    "repository": "https://github.com/xxvasu/ALEXAmusic",
+    "repository": "https://github.com/xxvasu/M4U",
     "stack": "container",
     "env": {
         "SESSION_NAME": {
@@ -38,6 +38,9 @@
         }
     },
     "buildpacks": [
+       {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+       }
        {
       "url": "heroku/python"
        }
