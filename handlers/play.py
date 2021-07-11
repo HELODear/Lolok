@@ -1,9 +1,9 @@
-from os import path
 from typing import Dict
 from pyrogram import Client
 from pyrogram.types import Message, Voice
 from typing import Callable, Coroutine, Dict, List, Tuple, Union
-from callsmusic import callsmusic, queues
+from callsmusic import callsmusic
+from queues import queues
 from helpers.admins import get_administrators
 from os import path
 import requests
@@ -40,6 +40,7 @@ from config import que
 from Python_ARQ import ARQ
 import json
 import wget
+
 chat_id = None
 
            
