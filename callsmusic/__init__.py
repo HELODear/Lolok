@@ -1,2 +1,4 @@
 from .callsmusic import pytgcalls, run
-from . import queues
+from queues import queues
+
+__all__ = ["pytgcalls", "run", "queues"]
