@@ -36,4 +36,4 @@ async def get_administrators(chat: Chat) -> List[int]:
                 to_set.append(administrator.user.id)
 
         cache.admins.set(chat.id, to_set)
-        return await get_administrators(chat)
+        return await get_administrators(message.chat)
