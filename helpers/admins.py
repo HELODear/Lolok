@@ -17,5 +17,5 @@ async def get_administrators(chat: Chat) -> List[int]:
             if administrator.can_manage_voice_chats:
                 to_set.append(administrator.user.id)
 
-        admins.set(chat.id, to_set)
+        administrators.set(chat.id, to_set)
         return await get_administrators(chat)
