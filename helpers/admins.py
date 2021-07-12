@@ -6,7 +6,7 @@ import cache.admins
 
 
 async def get_administrators(chat: Chat) -> List[int]:
-    get = gett(chat.id)
+    get = get(chat.id)
 
     if get:
         return get
