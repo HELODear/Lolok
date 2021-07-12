@@ -1,3 +1,4 @@
+ -0,0 +1,39 @@
 # Calls Music 1 - Telegram bot for streaming audio in group calls
 # Copyright (C) 2021  Roj Serbest
 
@@ -17,12 +18,12 @@
 
 from typing import List
 
-from pyrogram.types import Chat
+from pyrogram.types import Chat, User
 
 import cache.admins
 
 
-async def get_administrators(chat: Chat) -> List[int]:
+async def get_administrators(chat: Chat) -> List[User]:
     get = cache.admins.get(chat.id)
 
     if get:
@@ -32,8 +33,8 @@ async def get_administrators(chat: Chat) -> List[int]:
         to_set = []
 
         for administrator in administrators:
-            if administrator.can_manage_voice_chats:
-                to_set.append(administrator.user.id)
+            #if administrator.can_manage_voice_chats:
+            to_set.append(administrator.user.id)
 
-        cache.admins.set(message.chat, to_set)
-        return await get_administrators(message.chat)
+        cache.admins.set(chat.id, to_set)
+        return await get_administrators(chat)
