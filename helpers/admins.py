@@ -17,12 +17,12 @@
 
 from typing import List
 
-from pyrogram.types import Chat, User
+from pyrogram.types import Chat
 
 import cache.admins
 
 
-async def get_administrators(chat: Chat) -> List[User]:
+async def get_administrators(chat: Chat) -> List[int]:
     get = cache.admins.get(chat.id)
 
     if get:
