@@ -600,6 +600,7 @@ async def deezer(client: Client, message_: Message):
 
     text = message_.text.split(" ", 1)
     queryy = text[1]
+    query = queryy
     res = lel
     await res.edit(f"Searching 👀👀👀 for `{queryy}` on deezer")
     try:
