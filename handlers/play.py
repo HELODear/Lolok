@@ -22,7 +22,7 @@ from pyrogram.errors import UserAlreadyParticipant
 import converter
 from downloaders import youtube
 
-from config import BOT_NAME as bn, DURATION_LIMIT
+from config import BOT_NAME as bn, DURATION_LIMIT, ARQ_API_KEY
 from helpers.filters import command, other_filters
 from helpers.decorators import errors, authorized_users_only
 from helpers.errors import DurationLimitError
@@ -41,11 +41,11 @@ from Python_ARQ import ARQ
 import json
 import wget
 
+aiohttpsession = aiohttp.ClientSession()
 chat_id = None
-
-           
-
-
+arq = ARQ("https://thearq.tech", ARQ_API_KEY, aiohttpsession)
+DISABLED_GROUPS = []
+useer ="NaN"
 def cb_admin_check(func: Callable) -> Callable:
     async def decorator(client, cb):
         admemes = a.get(cb.message.chat.id)
@@ -603,8 +603,10 @@ async def deezer(client: Client, message_: Message):
     res = lel
     await res.edit(f"Searching 👀👀👀 for `{queryy}` on deezer")
     try:
-        arq = ARQ("https://thearq.tech")
-        r = await arq.deezer(query=queryy, limit=1)
+        songs = await arq.deezer(query,1)
+        if not songs.ok:
+            await message_.reply_text(songs.result)
+            return
         title = r[0]["title"]
         duration = int(r[0]["duration"])
         thumbnail = r[0]["thumbnail"]
@@ -733,11 +735,10 @@ async def jiosaavn(client: Client, message_: Message):
     res = lel
     await res.edit(f"Searching 👀👀👀 for `{query}` on jio saavn")
     try:
-        async with aiohttp.ClientSession() as session:
-            async with session.get(
-                f"https://jiosaavnapi.bhadoo.uk/result/?query={query}"
-            ) as resp:
-                r = json.loads(await resp.text())
+        songs = await arq.saavn(query)
+        if not songs.ok:
+            await message_.reply_text(songs.result)
+            return
         sname = r[0]["song"]
         slink = r[0]["media_url"]
         ssingers = r[0]["singers"]
@@ -759,7 +760,7 @@ async def jiosaavn(client: Client, message_: Message):
              [
                InlineKeyboardButton(
                    text="Join Updates Channel",
-                   url='https://t.me/vasuxd')
+                   url='https://t.me/VASUXD')
              ],
              [       
                InlineKeyboardButton(
