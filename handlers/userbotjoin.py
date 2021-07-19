@@ -27,18 +27,18 @@ async def addchannel(client, message):
         await USER.send_message(message.chat.id,"I joined here as you requested")
     except UserAlreadyParticipant:
         await message.reply_text(
-            "<b>@M4Uplugin already in your chat</b>",
+            "<b>Userbot already in your chat</b>",
         )
         pass
     except Exception as e:
         print(e)
         await message.reply_text(
             f"<b>🛑 Flood Wait Error 🛑 \n User {user.first_name} couldn't join your group due to heavy join requests for userbot! Make sure user is not banned in group."
-            "\n\nOr manually add @M4Uplugin to your Group and try again</b>",
+            "\n\nOr manually add Assistant Userbot to your Group and try again</b>",
         )
         return
     await message.reply_text(
-            "<b>@M4Uplugin userbot joined your chat</b>",
+            "<b>userbot joined your chat</b>",
         )
     
 @USER.on_message(filters.group & filters.command(["userbotleave"]))
