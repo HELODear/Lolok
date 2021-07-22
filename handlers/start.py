@@ -9,10 +9,12 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
     & ~ filters.edited
 )
 async def start_(client: Client, message: Message):
-    await message.reply_sticker("CAACAgUAAxkBAAIp9mBtwBBZGywWEmV-WC8gcMArjusuAAKMAgACTp1xV6m-mtC1YTfoHgQ")
+    await message.reply_sticker("CAACAgEAAxkBAAEK7B5g96PH4LCds0WHtLPwITEHoKCzHgADAQACqx6hRNslQs_kBc9VIAQ")
     await message.reply_text(
         f"""<b>Hi {message.from_user.first_name}!
-\nI am 𝐌𝟒𝐔 bot • @xxvasu ❤
+\nI am 𝐌𝟒𝐔 🎵 Bot!
+\nMaintained by @xxvasu ❤️
+\nHit ➤ /help for list of available commands and how they work!
  </b>""",
       
        
@@ -20,7 +22,7 @@ async def start_(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "♬Ɯ៩ន០៣៩ ᖲᖰ០នន០៣ន🎵", url="https://t.me/hindi_chatting_india",
+                        "Awesome Blossoms 🌸🎵", url="https://t.me/hindi_chatting_india",
                     )
                 ],
                 [
@@ -36,7 +38,7 @@ async def start_(client: Client, message: Message):
                 ],
                 [
                     InlineKeyboardButton(
-                        "➕ Add To Your Group ➕", url="https://t.me/ALEXA_music_robot?startgroup=true"
+                        "➕ Add To Your Group ➕", url="https://t.me/GroupsVCBot?startgroup=true"
                     ) 
                 ]
             ]
@@ -90,7 +92,7 @@ async def help(client: Client, message: Message):
 /saavn <song name> - download songs you want quickly via saavn
 /video <song name> - download videos you want quickly
 \n𝐀𝐃𝐌𝐈𝐍𝐒 𝐎𝐍𝐋𝐘
-\n/player - open music player settings panel
+/player - open music player settings panel
 /pause - pause song play
 /resume - resume song play
 /skip - play next song
@@ -103,9 +105,9 @@ async def help(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "ᴄᴏɴᴛᴀᴄᴛ ᴠᴀꜱᴜ", url="https://t.me/xxvasu"
+                        "𝐂𝐎𝐍𝐓𝐀𝐂𝐓", url="https://t.me/xxvasu"
                     )
                 ]
             ]
         )
-    )    
+    )
