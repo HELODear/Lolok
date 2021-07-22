@@ -7,7 +7,7 @@ Get STRING_NAME from here:
 
 [![GenerateString](https://img.shields.io/badge/repl.it-generateString-yellowgreen)](https://replit.com/@MrAryan/M4U)
 
-### Mandatory Vars.
+### Mandatory Vars
 
 - Some Of The Mandatory Vars Are :-
    - `API_ID` :  Give API_ID of your Alternate Telegram Account. also get from here [@APIxdBot](https://t.me/APIxdBot)
@@ -35,7 +35,7 @@ Get STRING_NAME from here:
 - `/saavn <song name>` - download songs you want quickly via saavn
 - `/video <song name>` - download videos you want quickly
 
-#### Admins only.
+#### Admins only
 - `/player` - open music player settings panel
 - `/pause` - pause song play
 - `/resume` - resume song play
