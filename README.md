@@ -1,17 +1,18 @@
-# How To Host
+# 𝐌𝟒𝐔 𝐕𝟐 🎵
+## How To Host
 The easiest way to deploy this Bot
-<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/xxvasu/ALEXA"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-red?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
+<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/V1SU/GroupsVCBot"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-red?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
 
 Get STRING_NAME from here:
 
-[![GenerateString](https://img.shields.io/badge/repl.it-generateString-yellowgreen)](https://replit.com/@QueenArzoo/VCPlayBot)
+[![GenerateString](https://img.shields.io/badge/repl.it-generateString-yellowgreen)](https://replit.com/@MrAryan/M4U)
 
 ### Mandatory Vars.
 
 - Some Of The Mandatory Vars Are :-
-   - `API_ID` :  Give API_ID of your Alternate Telegram Account. also get from here [@APIInfoBot](https://t.me/APIinfoBot)
-   - `API_HASH` :  Give API_HASH of your Alternate Telegram Account. also get from here [@APIInfoBot](https://t.me/APIinfoBot)
-   - `STRING_NAME` :  Make a string session from [here](https://replit.com/@QueenArzoo/VCPlayBot)
+   - `API_ID` :  Give API_ID of your Alternate Telegram Account. also get from here [@APIxdBot](https://t.me/APIxdBot)
+   - `API_HASH` :  Give API_HASH of your Alternate Telegram Account. also get from here [@APIxdBot](https://t.me/APIxdBot)
+   - `STRING_NAME` :  Make a string session from [here](https://replit.com/@MrAryan/M4U)
    - `BOT_TOKEN` :  Make a Bot from [@Botfather](https://t.me/botfather) and fill it's bot token.
    - `SUDO_USERS` :  Fill Userid of yhe users whom you want to be able to control the bot. You can add multiple id by giving a space in b/w each id.
 
@@ -82,3 +83,5 @@ Copy `example.env` to `.env` and fill it with your credentials.
 ### GNU Affero General Public License v3.0
 
 [Read more](http://www.gnu.org/licenses/#AGPL)
+
+## Owner ➤ [ᴠᴀꜱᴜ™ ✓](https://GitHub.com/V1SU)
