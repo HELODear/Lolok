@@ -9,11 +9,11 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
     & ~ filters.edited
 )
 async def start_(client: Client, message: Message):
-    await message.reply_sticker("CAACAgEAAxkBAAEK7B5g96PH4LCds0WHtLPwITEHoKCzHgADAQACqx6hRNslQs_kBc9VIAQ")
+    await message.reply_sticker("CAACAgUAAxkBAAEK9Ftg-VrajokPtQJZeXDGSRuZlBlkCAACwRgAAoJj_jm2JPo-CmaIgSAE")
     await message.reply_text(
         f"""<b>Hi {message.from_user.first_name}!
-\nI am 𝐌𝟒𝐔 🎵 Bot!
-\nMaintained by @xxvasu ❤️
+\nI am 𝙎𝙀𝙀𝙆𝙀𝙍 Bot!
+\nMaintained by @SeeKeR_XD 🕉️
 \nHit ➤ /help for list of available commands and how they work!
  </b>""",
       
@@ -22,18 +22,18 @@ async def start_(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "Awesome Blossoms 🌸🎵", url="https://t.me/hindi_chatting_india",
+                        "User's Manual", url="https://t.me/A_MANUAL_FOR_HUMAN_MECHANISM",
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "👤 Owner", url="https://t.me/xxvasu"
+                        "👤 Owner", url="https://t.me/SeeKeR_XD"
                     ),
                     InlineKeyboardButton(
-                        "💬 Group", url="https://t.me/hindi_chatting_india"
+                        "💬 Group", url="https://t.me/A_MANUAL_FOR_HUMAN_MECHANISM"
                     ),
                     InlineKeyboardButton(
-                        "🔊 Updates", url="https://t.me/vasuxd"
+                        "🔊 Updates", url="https://t.me/A_MANUAL_FOR_HUMAN_MECHANISM"
                     )
                 ],
                 [
@@ -57,7 +57,7 @@ async def start(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "🔊 Updates", url="https://t.me/vasuxd"
+                        "🔊 Updates", url="https://t.me/SeeKeR_XD"
                     )
                 ],    
                 [    
@@ -99,13 +99,13 @@ async def help(client: Client, message: Message):
 /end - stop music play
 /userbotjoin - invite assistant to your chat
 /admincache - Refresh admin list
-\n𝐂𝐫𝐞𝐚𝐭𝐞𝐝 𝐰𝐢𝐭𝐡 ❤️ 𝐛𝐲 𝐕𝐀𝐒𝐔
+\n𝘾𝙍𝙀𝘼𝙏𝙀𝘿 𝘽𝙔 𝙎𝙀𝙀𝙆𝙀𝙍🕉️🚩
  </b>""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "𝐂𝐎𝐍𝐓𝐀𝐂𝐓", url="https://t.me/xxvasu"
+                        "𝐂𝐎𝐍𝐓𝐀𝐂𝐓", url="https://t.me/SeeKeR_XD"
                     )
                 ]
             ]
